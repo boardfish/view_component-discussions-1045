@@ -19,3 +19,8 @@ This outputs HTML as follows:
   </div>
 </div>
 ```
+
+## To run:
+
+Ensure you're running Ruby 2.7 with Bundler. Run `bundle install`
+followed by `rails s` in the project directory.
