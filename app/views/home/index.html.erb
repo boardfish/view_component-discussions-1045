@@ -1,0 +1,6 @@
+<%= render Nav.new do |c| %>
+  <%= c.sections([
+      { items: { name: 'single child' } },
+      { items: [{ name: 'child one' }, { name: 'child two' }] }
+    ]) %>
+<% end %>
