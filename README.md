@@ -1,24 +1,9 @@
-# README
+# Solution for view_component/discussions/1045
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The original problem involved rendering a collection slot inside a div,
+only if multiple items were passed. THe solution's structured as
+follows:
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- The `Nav` component has a slot for `Nav::DropdownGroup`s
+- `Nav::DropdownGroup`s render a single `Nav::Item`, or multiple
+    `Nav::Item`s enclosed within a `div`
