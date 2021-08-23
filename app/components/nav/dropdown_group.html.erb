@@ -1,7 +1,7 @@
 <% if @items.one? %>
   <%= render Nav::Item.new(**@items.compact.first) %>
 <% else %>
-  <div>
+  <div class="nav-group">
     <% @items.each do |item| %>
       <%= render Nav::Item.new(**item) %>
     <% end %>
